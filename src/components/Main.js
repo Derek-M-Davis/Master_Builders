@@ -3,6 +3,12 @@ import Build from './Build.js'
 import Form from './Form.js'
 
 class Main extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            builds: []
+        }
+    }
 
 
     render(){
