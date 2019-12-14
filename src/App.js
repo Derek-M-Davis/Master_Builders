@@ -1,7 +1,6 @@
 import React from 'react';
-import Header from './components/Header.js'
-import Aside from './components/Aside.js'
-import Main from './components/Main.js'
+import logo from './logo.svg';
+import './App.css';
 
 class App extends React.Component {
     constructor(props){
@@ -98,8 +97,5 @@ class App extends React.Component {
         )
     }
 }
-
-
-
 
 export default App;
