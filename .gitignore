@@ -116,8 +116,4 @@ yarn-debug.log*
 
 # Ignore uploaded files in development
 /storage/*
-<<<<<<< HEAD
 !/storage/.keep
-=======
-!/storage/.keep
->>>>>>> e54fb648e35374989db296f1a15708396e5311d7
