@@ -15,7 +15,7 @@ class Main extends React.Component {
         .then(data => data.json())
         .then(jData => {
             this.setState({builds:jData})
-        }).catch(err => console.log(err);)
+        }).catch(err => console.log(err))
     }
 
     handleCreate = (createBuild) => {
@@ -62,8 +62,8 @@ class Main extends React.Component {
         })
         .then(json => {
             this.setState(prevState => {
-                const builds = prevState.builds.filter(build => build.id !==)
-                return {build}
+                const builds = prevState.builds.filter(build => build.id !== id)
+                return {builds}
             })
         })
         .catch(err => console.log(err))
