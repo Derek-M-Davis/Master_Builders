@@ -3,6 +3,11 @@ import Build from './Build.js'
 import Form from './Form.js'
 
 let baseUrl = '';
+if (process.env.NODE_ENV === 'development') {
+  baseUrl = 'http://localhost:8888'
+} else {
+  console.log('this is for heroku');
+}
 
 
 class Main extends React.Component {
@@ -21,9 +26,10 @@ class Main extends React.Component {
         }).catch(err => console.log(err))
     }
 
-    handleCreate = (createBuild) => {
-        fetch({
-            body:JSON.stringify(createBuild),
+
+    handleCreate = (createData) => {
+        fetch(`${baseUrl}/builds`,{
+            body:JSON.stringify(createData),
             method: 'POST',
             headers: {
                 'Accept': 'application.json, text/plain, */*',
