@@ -9,21 +9,21 @@ class App extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            builds: data,
-            cpu: null,
-            cpuCooler: null,
-            motherboard: null,
-            memory: null,
-            storage: null,
-            videoCard: null,
-            case: null,
-            powerSupply: null,
-            os: null,
-            fan: null,
-            monitor: null,
-            keyboard: null,
-            mouse: null,
-            favBuilds: [],
+            // builds: data,
+            // cpu: null,
+            // cpuCooler: null,
+            // motherboard: null,
+            // memory: null,
+            // storage: null,
+            // videoCard: null,
+            // case: null,
+            // powerSupply: null,
+            // os: null,
+            // fan: null,
+            // monitor: null,
+            // keyboard: null,
+            // mouse: null,
+            // favBuilds: [],
             view: {
                 page: 'home',
                 pageTitle: 'lkadsgf',
@@ -108,15 +108,15 @@ class App extends React.Component {
     render(){
         return(
             <div className="large-container">
-            <h1> Hello World! </h1>
-            <Header />
-            <Main
-            view={this.state.view}
-            handleView = {this.handleView}
-            formInputs = {this.state.formInputs}
-            />
-            <Aside handleView={this.handleView}/>
-
+              <Header />
+                <div className="large-container">
+                    <Aside handleView={this.handleView}/>
+                    <Main
+                    view={this.state.view}
+                    handleView = {this.handleView}
+                    formInputs = {this.state.formInputs}
+                    />
+                </div>
             </div>
         )
     }
