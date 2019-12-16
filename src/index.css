@@ -9,6 +9,8 @@
   --grey-purple: rgb(92, 93, 104);
   --light-green: rgb(180, 177, 107);
   --light-gray:  rgb(163, 163, 163);
+  --blue: rgb(0, 195, 255);
+  --red:  rgb(165, 0, 0);
 }
 
 /* ------ General ------ */
@@ -75,13 +77,14 @@ aside {
   min-height: calc(100vh - 245px);
   padding: 0px 20px;
   box-sizing: border-box;
-  background: rgb(165, 0, 0);
+  background: var(--red);
 }
 aside h2 {
   font-family: var(--header-font);
   font-size: 2em;
   color: whitesmoke;
   margin-bottom: 0;
+  border: 1px solid;
 }
 aside h3 {
   font-family: var(--header-font);
@@ -104,7 +107,7 @@ main > h1 {
   font-family: var(--header-font);
   font-size: 2em;
   color: var(--grey-purple);
-  border-bottom: 3px solid var(--light-green);
+  border-bottom: 3px solid var(--blue);
   width: 85%;
   margin: 27px auto;
   text-transform: uppercase;
@@ -178,7 +181,7 @@ label {
   text-align: left;
   text-transform: uppercase;
   font-family: var(--header-font);
-  color: var(--light-green);
+  color: var(--red);
 }
 input[type="text"] {
   display: inline-block;
@@ -216,6 +219,7 @@ input[type="submit"] {
   margin: 10px auto 0px auto;
 }
 input[type="submit"]:hover {
-  background-color: var(--light-green);
+  background-color: var(--blue);
   cursor: pointer;
+  border-radius: 5px;
 }
