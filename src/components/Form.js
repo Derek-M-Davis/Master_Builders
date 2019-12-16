@@ -75,7 +75,7 @@ class Form extends React.Component {
             </label>
             <label>
               Storage
-              <input type="text" placeholder="M.2/2.5/3.5 Form Factor" id="storage" value={this.state.storage} onChange={this.handleChange}/>
+              <input type="text" placeholder="Capacity and M.2/2.5in/3.5in Form Factor" id="storage" value={this.state.storage} onChange={this.handleChange}/>
             </label>
             <label>
               Video Card
