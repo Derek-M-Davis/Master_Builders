@@ -84,7 +84,7 @@ class App extends React.Component {
             memory: buildData.memory,
             storage: buildData.storage,
             videoCard: buildData.videoCard,
-            case: buildData.case,
+            case: buildData.compCase,
             powerSupply: buildData.powerSupply,
             os: buildData.os,
             fan: buildData.fan,
