@@ -16,7 +16,8 @@ class Form extends React.Component {
             fan: '',
             monitor: '',
             keyboard: '',
-            mouse: ''
+            mouse: '',
+            id: null
         }
     }
 
@@ -54,65 +55,65 @@ class Form extends React.Component {
         })
     }
 
-    render () {
-        return (
-            <form onSubmit={this.handleSubmit}>
-            <label>
-              CPU
-              <input type="text" placeholder="Intel/AMD" id="cpu" value={this.state.cpu} onChange={this.handleChange}/>
-            </label>
-            <label>
-              CPU Cooler
-              <input type="text" placeholder="Air Cooler/Liquid Cooler" id="cpuCooler" value={this.state.cpuCooler} onChange={this.handleChange}/>
-            </label>
-            <label>
-              Motherboard
-              <input type="text" placeholder="Intel B/H/Z Series or AMD B/X Series " id="motherboard" value={this.state.motherboard} onChange={this.handleChange}/>
-            </label>
-            <label>
-              Memory
-              <input type="text" placeholder="Memory Capacity/Speed/CAS Latency" id="memory" value={this.state.memory} onChange={this.handleChange}/>
-            </label>
-            <label>
-              Storage
-              <input type="text" placeholder="Capacity and M.2/2.5in/3.5in Form Factor" id="storage" value={this.state.storage} onChange={this.handleChange}/>
-            </label>
-            <label>
-              Video Card
-              <input type="text" placeholder="Geforce-GTX/RTX or Radeon-RX Series " id="videoCard" value={this.state.videoCard} onChange={this.handleChange}/>
-            </label>
-            <label>
-              Case
-              <input type="text" placeholder="ATX/EATX/Micro ATX/Mini ITX" id="case" value={this.state.case} onChange={this.handleChange}/>
-            </label>
-            <label>
-              Power Supply
-              <input type="text" placeholder="Wattage and Rating" id="powerSupply" value={this.state.powerSupply} onChange={this.handleChange}/>
-            </label>
-            <label>
-              Operating System
-              <input type="text" placeholder="Windows/OSX/Linux" id="os" value={this.state.os} onChange={this.handleChange}/>
-            </label>
-            <label>
-              Fans
-              <input type="text" placeholder="Are they RGB?" id="fan" value={this.state.fan} onChange={this.handleChange}/>
-            </label>
-            <label>
-              Monitor
-              <input type="text" placeholder="Size/Resolution/Refresh Rate" id="monitor" value={this.state.monitor} onChange={this.handleChange}/>
-            </label>
-            <label>
-              Keyboard
-              <input type="text" placeholder="It better have good switches" id="keyboard" value={this.state.keyboard} onChange={this.handleChange}/>
-            </label>
-            <label>
-              Mouse
-              <input type="text" placeholder="More RGB?" id="mouse" value={this.state.mouse} onChange={this.handleChange}/>
-            </label>
+  render () {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          CPU
+          <input type="text" placeholder="Intel/AMD" id="cpu" value={this.state.cpu} onChange={this.handleChange}/>
+        </label>
+        <label>
+          CPU Cooler
+          <input type="text" placeholder="Air Cooler/Liquid Cooler" id="cpuCooler" value={this.state.cpuCooler} onChange={this.handleChange}/>
+        </label>
+        <label>
+          Motherboard
+          <input type="text" placeholder="Intel B/H/Z Series or AMD B/X Series " id="motherboard" value={this.state.motherboard} onChange={this.handleChange}/>
+        </label>
+        <label>
+          Memory
+          <input type="text" placeholder="Memory Capacity/Speed/CAS Latency" id="memory" value={this.state.memory} onChange={this.handleChange}/>
+        </label>
+        <label>
+          Storage
+          <input type="text" placeholder="Capacity and M.2/2.5in/3.5in Form Factor" id="storage" value={this.state.storage} onChange={this.handleChange}/>
+        </label>
+        <label>
+          Video Card
+          <input type="text" placeholder="Geforce-GTX/RTX or Radeon-RX Series " id="videoCard" value={this.state.videoCard} onChange={this.handleChange}/>
+        </label>
+        <label>
+          Case
+          <input type="text" placeholder="ATX/EATX/Micro ATX/Mini ITX" id="case" value={this.state.case} onChange={this.handleChange}/>
+        </label>
+        <label>
+          Power Supply
+          <input type="text" placeholder="Wattage and Rating" id="powerSupply" value={this.state.powerSupply} onChange={this.handleChange}/>
+        </label>
+        <label>
+          Operating System
+          <input type="text" placeholder="Windows/OSX/Linux" id="os" value={this.state.os} onChange={this.handleChange}/>
+        </label>
+        <label>
+          Fans
+          <input type="text" placeholder="Are they RGB?" id="fan" value={this.state.fan} onChange={this.handleChange}/>
+        </label>
+        <label>
+          Monitor
+          <input type="text" placeholder="Size/Resolution/Refresh Rate" id="monitor" value={this.state.monitor} onChange={this.handleChange}/>
+        </label>
+        <label>
+          Keyboard
+          <input type="text" placeholder="It better have good switches" id="keyboard" value={this.state.keyboard} onChange={this.handleChange}/>
+        </label>
+        <label>
+          Mouse
+          <input type="text" placeholder="More RGB?" id="mouse" value={this.state.mouse} onChange={this.handleChange}/>
+        </label>
         <input type="submit" value="share"/>
-        </form>
-        )
-    }
+      </form>
+    )
+  }
 
 }
 

@@ -2,6 +2,8 @@ import React from 'react'
 import Build from './Build.js'
 import Form from './Form.js'
 
+let baseUrl = '';
+
 
 class Main extends React.Component {
     constructor(props){
@@ -12,7 +14,7 @@ class Main extends React.Component {
     }
 
     fetchBuilds = () => {
-        fetch()
+        fetch(`${baseUrl}/builds`)
         .then(data => data.json())
         .then(jData => {
             this.setState({builds:jData})
@@ -24,6 +26,8 @@ class Main extends React.Component {
             body:JSON.stringify(createBuild),
             method: 'POST',
             headers: {
+                'Accept': 'application.json, text/plain, */*',
+                'Content-Type': 'application.json'
             }
         })
         .then(createdBuild => {
@@ -44,7 +48,8 @@ class Main extends React.Component {
             body:JSON.stringify(updateData),
             method: 'PUT',
             headers: {
-
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
             }
         })
         .then(updatedBuild => {
@@ -58,7 +63,8 @@ class Main extends React.Component {
         fetch({
             method: 'DELETE',
             headers: {
-
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
             }
         })
         .then(json => {
@@ -81,9 +87,9 @@ class Main extends React.Component {
 
             {
                 this.props.view.page === 'home'
-                ?this.state.builds.map((postData) => (
-                <Build key={postData.id}
-                    buildData={postData}
+                ? this.state.builds.map((buildData) => (
+                <Build key={buildData.id}
+                    buildData={buildData}
                     handleView = {this.props.handleView}
                     handleDelete= {this.handleDelete} />
                 ))
