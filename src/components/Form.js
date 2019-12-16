@@ -10,7 +10,7 @@ class Form extends React.Component {
             memory: '',
             storage: '',
             videoCard: '',
-            case: '',
+            compCase: '',
             powerSupply: '',
             os: '',
             fan: '',
@@ -44,7 +44,7 @@ class Form extends React.Component {
             memory: this.props.formInputs.memory,
             storage: this.props.formInputs.storage,
             videoCard: this.props.formInputs.videoCard,
-            case: this.props.formInputs.case,
+            case: this.props.formInputs.compCase,
             powerSupply: this.props.formInputs.powerSupply,
             os: this.props.formInputs.os,
             fan: this.props.formInputs.fan,
@@ -84,7 +84,7 @@ class Form extends React.Component {
         </label>
         <label>
           Case
-          <input type="text" placeholder="ATX/EATX/Micro ATX/Mini ITX" id="case" value={this.state.case} onChange={this.handleChange}/>
+          <input type="text" placeholder="ATX/EATX/Micro ATX/Mini ITX" id="compCase" value={this.state.compCase} onChange={this.handleChange}/>
         </label>
         <label>
           Power Supply
