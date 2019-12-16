@@ -8,6 +8,8 @@ class App extends React.Component {
         super(props)
         this.state = {
             view: {
+                page: 'home',
+                pageTitle: 'lkadsgf',
 
             },
             formInputs: {
@@ -30,6 +32,7 @@ class App extends React.Component {
     }
 
     handleView = (view, buildData) => {
+        let pageTitle = ''
         let formInputs = {
             cpu: '',
             cpuCooler: '',
@@ -48,42 +51,42 @@ class App extends React.Component {
         }
 
 
-//     switch(view){
-//         case 'home':
-//         pageTitle = 'Pc Builder'
-//         break
-//         case 'addBuild':
-//         pageTitle = 'Create your PC'
-//         break
-//         case 'editBuild':
-//         pageTitle = 'Change up your build'
-//         formInputs = {
-//             cpu: buildData.cpu,
-//             cpuCooler: buildData.cpuCooler,
-//             motherboard: buildData.motherboard,
-//             memory: buildData.memory,
-//             storage: buildData.storage,
-//             videoCard: buildData.videoCard,
-//             case: buildData.case,
-//             powerSupply: buildData.powerSupply,
-//             os: buildData.os,
-//             fan: buildData.fan,
-//             monitor: buildData.monitor,
-//             keyboard: buildData.keyboard,
-//             mouse: buildData.mouse,
-//             id: buildData.id
-//         }
-//         break
-//         default:
-//         break
-//     }
-//     this.setState({
-//         view: {
-//             page: view,
-//             pageTitle: pageTitle
-//         },
-//         formInputs: formInputs
-//     })
+    switch(view){
+        case 'home':
+        pageTitle = 'Pc Builder'
+        break
+        case 'addBuild':
+        pageTitle = 'Create your PC'
+        break
+        case 'editBuild':
+        pageTitle = 'Change up your build'
+        formInputs = {
+            cpu: buildData.cpu,
+            cpuCooler: buildData.cpuCooler,
+            motherboard: buildData.motherboard,
+            memory: buildData.memory,
+            storage: buildData.storage,
+            videoCard: buildData.videoCard,
+            case: buildData.case,
+            powerSupply: buildData.powerSupply,
+            os: buildData.os,
+            fan: buildData.fan,
+            monitor: buildData.monitor,
+            keyboard: buildData.keyboard,
+            mouse: buildData.mouse,
+            id: buildData.id
+        }
+        break
+        default:
+        break
+    }
+    this.setState({
+        view: {
+            page: view,
+            pageTitle: pageTitle
+        },
+        formInputs: formInputs
+    })
 }
     render(){
         return(
@@ -94,7 +97,7 @@ class App extends React.Component {
             handleView = {this.handleView}
             formInputs = {this.state.formInputs}
             />
-            <Aside />
+            <Aside handleView={this.handleView}/>
             </div>
         )
     }
