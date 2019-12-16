@@ -28,7 +28,7 @@ const compBuilds = {
             fan: 'Corsair LL RGB',
             monitor: 'ROG 32in 1440p 144hz',
             keyboard: 'Corsair K90',
-            mouse: 'LogitGlorious PC Gaming Race MODEL Oech G903',
+            mouse: 'Glorious PC Gaming Race MODEL O',
         },
         {
             cpu: 'AMD Ryzen 5 3600',
@@ -77,3 +77,5 @@ const compBuilds = {
         },
     ]
 }
+
+export default compBuilds
