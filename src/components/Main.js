@@ -82,7 +82,7 @@ class Main extends React.Component {
             {
                 this.props.view.page === 'home'
                 ?this.state.builds.map((postData) => (
-                    <Build key={postData.id}
+                <Build key={postData.id}
                     buildData={postData}
                     handleView = {this.props.handleView}
                     handleDelete= {this.handleDelete} />

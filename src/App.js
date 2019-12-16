@@ -1,12 +1,29 @@
 import React from 'react';
 import './App.css';
+import data from './data.js'
 import Main from './components/Main.js';
 import Aside from './components/Aside.js';
+import Header from './components/Header.js'
 
 class App extends React.Component {
     constructor(props){
         super(props)
         this.state = {
+            builds: data,
+            cpu: null,
+            cpuCooler: null,
+            motherboard: null,
+            memory: null,
+            storage: null,
+            videoCard: null,
+            case: null,
+            powerSupply: null,
+            os: null,
+            fan: null,
+            monitor: null,
+            keyboard: null,
+            mouse: null,
+            favBuilds: [],
             view: {
                 page: 'home',
                 pageTitle: 'lkadsgf',
@@ -92,12 +109,14 @@ class App extends React.Component {
         return(
             <div className="large-container">
             <h1> Hello World! </h1>
+            <Header />
             <Main
             view={this.state.view}
             handleView = {this.handleView}
             formInputs = {this.state.formInputs}
             />
             <Aside handleView={this.handleView}/>
+
             </div>
         )
     }
