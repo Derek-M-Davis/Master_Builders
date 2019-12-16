@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Computer Builder
 
-## Available Scripts
+<!-- link to hosted app -->
+#[Computer Building App]()
 
-In the project directory, you can run:
+#### Original Goal:
+> Having an website that is usable on mobile to help those decesion shy people with narrowing their adult beverage choices. After choosing your beverage a seperate tab of news stories, talking point while out with friends, coworkers and strangers to avoid akward silence. If you actually like the people around you and trust them not to drop your phone without a case, a game revolving around the jeopardy api we worked with earlier would be an option for additional screen time without sacrificing the inclusion of people around you.
 
-### `npm start`
+#### Technologies Used
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-MVC Structure  
+Create-React-App
+-Heroku Hosting application and CLI  
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### Approach Taken
+>Primary goal was to make a robust interface that is intuative to make the decision process as quick as possible weither you are ordering out or looking for ideas to make at home. Seeding the data with our ajax calls then designing around partials to make the webpage clean and distraction free. 
 
-### `npm test`
+#### Challenges
+>Working within branches as a team for the first time we quickly found a flaw in our process of not pushing to our master branch when utilizing Heroku. While we reached out to the internet, classmates, our trusty TA and project leader we soon found ourselfes six hours into debugging order, talking, and referring to past projects that worked. We eventually did start from scratch unknowingly our only issue was Heroku not caring about other branches besides the master. It takes from master reguardless of your changes being pushed from our dev branch. Being behind by almost a day and being extremly frustrated with out oversight we did move forward. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+>Working with an api that has different levels of information made displaying anything besides the item id, name, and image very difficult. Making our saved drink list provided us with some wild ideas and thinking our original plan to be sunk. Erik being very tired he eventually tried nesting a second AJAX call inside the original using the id of the first call into the second to have acccess to the ingredients, measurements and instructions. Wizardry on our part allowed us to show even more information in our original show routes for the type of alcohol on the home page. This wild approach to our nested objects in arrays on users provided us with breakthroughs on our delete drink from saved and edit notes on saved drinks. 
 
-### `npm run build`
+#### Wireframes /  User Stories
+![Wireframe Image 1]( https://res.cloudinary.com/dcgapn1j0/image/upload/v1574708125/First_heroku_load_h9a6mw.png "First Successfull Heroku Upload")
+![Wireframe Image 2]( https://res.cloudinary.com/dcgapn1j0/image/upload/v1574708106/api_populating_data_endrhb.png "Api integrated using static list")
+![Wireframe Image 3]( https://res.cloudinary.com/dcgapn1j0/image/upload/v1574708134/navbar_with_relationship_c2zbmb.png "SignIn/Log Out with Nav Bar")
+![Wireframe Image 4]( https://res.cloudinary.com/dcgapn1j0/image/upload/v1574709615/img_2811_uhvcsw.jpg "Orginal Home page/Saved Drinks wireframe")
+![Wireframe Image 5]( https://res.cloudinary.com/dcgapn1j0/image/upload/v1574708777/saved_drink_array_m9qzp6.png "Saved Drinks array with basic layout")
+![Wireframe Image 6]( https://res.cloudinary.com/dcgapn1j0/image/upload/v1574797084/hero_image_and_basic_styling_gme3tq.png "Hero Image and basic styling")
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### Goals/Future Plans
+> Integrate the news app for the more relaxed crowd so that it fits and not feel like a copy paste job.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### Unsolved Problems
+> Weird bug when we remove a saved drink. Initially it is removed from the saved drinks page but if you click back to the saved drinks after going to another partial a new item is there at the end of the array. it is only fully removed when we log out. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
