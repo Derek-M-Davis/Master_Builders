@@ -6,9 +6,9 @@ class Aside extends React.Component {
 
             <aside>
                 <h2>Navigate</h2>
-                <p onClick={()=> {this.props.handleView('home')}}>Home</p>
-                <p onClick={()=> {this.props.handleView('addBuild')}}>Add Build</p>
-                <p>About Us</p>
+                <h3 onClick={()=> {this.props.handleView('home')}}>Home</h3>
+                <h3 onClick={()=> {this.props.handleView('addBuild')}}>Add Build</h3>
+                <h3>About Us</h3>
             </aside>
             
 
