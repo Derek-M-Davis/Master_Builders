@@ -23,7 +23,6 @@ class Main extends React.Component {
             body:JSON.stringify(createBuild),
             method: 'POST',
             headers: {
-
             }
         })
         .then(createdBuild => {
