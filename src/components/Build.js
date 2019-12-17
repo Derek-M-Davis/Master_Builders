@@ -5,7 +5,7 @@ class Build extends React.Component {
         return (
             <article>
                  <div className="build-header">
-                <h1>{this.props.buildData.id}</h1>
+                <h1>Build #{this.props.buildData.id}</h1>
                 </div>
                 <div className="build-body">
                 CPU: {this.props.buildData.cpu}
