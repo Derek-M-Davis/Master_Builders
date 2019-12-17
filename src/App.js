@@ -24,7 +24,7 @@ class App extends React.Component {
             // mouse: null,
             view: {
                 page: 'home',
-                pageTitle: 'lkadsgf',
+                pageTitle: 'Builds',
 
             },
             formInputs: {
@@ -107,7 +107,7 @@ class App extends React.Component {
         return(
             <div className="large-container">
               <Header />
-                <div className="large-container">
+                <div className="main-container">
                     <Aside handleView={this.handleView}/>
                     <Main
                     view={this.state.view}

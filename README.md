@@ -7,8 +7,8 @@
 > Make a computer build platform that allows you to show off your build. Have a User innerface to allow sign and saving of favorite builds.
 #### Technologies Used
 -MVC Structure  
--React
--PHP
+-React Front-End
+-PHP Back-End
 -JavaScript
 -Heroku Hosting application and CLI  
 
@@ -27,7 +27,7 @@
 
 
 #### Goals/Future Plans
-> To be able to make the user system in a language we had just learned in three days was quickly put on the backburner and we would much like some time to be able impliment that but with a final project with looming I think we are very happy with how it turned out.
+> A user system in a language we had just learned in three days was quickly put on the backburner and we would much like some time to be able impliment that but with a final project looming I think we are very happy with how it turned out.
 
 
 #### Unsolved Problems
