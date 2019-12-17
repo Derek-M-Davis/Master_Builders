@@ -1,5 +1,22 @@
 <?php
-$dbconn = pg_connect("host=localhost dbname=builds");
+$dbconn = null;
+if(getenv('DATABASE_URL')){
+    $connectionConfig = parse_url(getenv('DATABASE_URL'));
+    $host = $connectionConfig['host'];
+    $user = $connectionConfig['user'];
+    $password = $connectionConfig['pass'];
+    $port = $connectionConfig['port'];
+    $dbname = trim($connectionConfig['path'],'/');
+    $dbconn = pg_connect(
+        "host=".$host." ".
+        "user=".$user." ".
+        "password=".$password." ".
+        "port=".$port." ".
+        "dbname=".$dbname
+    );
+} else {
+    $dbconn = pg_connect("host=localhost dbname=phpapi");
+}
 
 class Build {
   public $id;
@@ -53,7 +70,7 @@ class Builds {
         $row_object->fan,
         $row_object->monitor,
         $row_object->keyboard,
-        $row_object->mouse      
+        $row_object->mouse
       );
       $builds[] = $new_build;
       $row_object = pg_fetch_object($results);
@@ -69,8 +86,8 @@ class Builds {
   static function update($updated_build){
       $query = "UPDATE builds SET cpu = $1, cpucooler = $2, motherboard = $3, memory = $4, storage = $5, videocard = $6, compcase = $7, powersupply = $8, os = $9, fan = $10, monitor = $11, keyboard = $12, mouse = $13 WHERE id = $14";
       $query_params = array(
-        $updated_build->cpu, $updated_build->cpucooler, $updated_build->motherboard, $updated_build->memory, $updated_build->storage, $updated_build->videocard, $updated_build->compcase, $updated_build->powersupply, $updated_build->os, 
-        $updated_build->fan, $updated_build->monitor, $updated_build->keyboard, $updated_build->mouse, 
+        $updated_build->cpu, $updated_build->cpucooler, $updated_build->motherboard, $updated_build->memory, $updated_build->storage, $updated_build->videocard, $updated_build->compcase, $updated_build->powersupply, $updated_build->os,
+        $updated_build->fan, $updated_build->monitor, $updated_build->keyboard, $updated_build->mouse,
         $updated_build->id);
       $result = pg_query_params($query, $query_params);
       return self::all();
