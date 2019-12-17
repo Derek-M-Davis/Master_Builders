@@ -28,14 +28,14 @@ header {
   margin: 0 auto;
   padding: 20px;
   background-color: var(--red);
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ040ZnpJvbHiXVABkMMDKguNhiaD6hZ4J0pBlKva3BIyN9xwGpbg&s);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
+  background-image: url(https://res.cloudinary.com/dcgapn1j0/image/upload/v1576613636/thomas-jensen-GztZ77a0tAM-unsplash_rbxbf4.jpg);
+  background-size: inherit;
+  background-repeat: space;
+  /* background-position: left; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 5px solid var(--blue);
+  border-bottom: 5px solid var(--light-gray);
 }
 header span {
   font-family: var(--accent-font);
@@ -61,6 +61,11 @@ header h1 {
 }
 header h1 strong {
   color: var(--light-green);
+}
+header img {
+  position: left;
+  height: 200px;
+  width: 200px;
 }
 
 /* ------ Main Container ------ */
@@ -102,6 +107,7 @@ aside h3:hover {
 /* ------ Main ------ */
 main {
   width: calc(100% - 300px);
+  padding-bottom: 10px;
 }
 main > h1 {
   font-family: var(--header-font);
