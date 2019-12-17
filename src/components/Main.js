@@ -50,7 +50,7 @@ class Main extends React.Component {
     }
 
     handleUpdate = (updateData) => {
-        fetch({
+        fetch(`${baseUrl}/builds/${updateData.id}`,{
             body:JSON.stringify(updateData),
             method: 'PUT',
             headers: {
@@ -60,13 +60,13 @@ class Main extends React.Component {
         })
         .then(updatedBuild => {
             this.props.handleView('home')
-            this.fetchPosts()
+            this.fetchBuilds()
         })
         .catch(err => console.log(err))
     }
 
     handleDelete = (id) => {
-        fetch({
+        fetch(`${baseUrl}/builds/${id}`,{
             method: 'DELETE',
             headers: {
                 'Accept': 'application/json, text/plain, */*',
