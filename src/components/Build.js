@@ -10,7 +10,7 @@ class Build extends React.Component {
                 <div className="build-body">
                 CPU: {this.props.buildData.cpu}
                 <br />
-                CPU Cooler: {this.props.buildData.cpuCooler}
+                CPU Cooler: {this.props.buildData.cpucooler}
                 <br />
                 Motherboard: {this.props.buildData.motherboard}
                 <br />
@@ -18,11 +18,11 @@ class Build extends React.Component {
                 <br />
                 Storage: {this.props.buildData.storage}
                 <br />
-                Video Card: {this.props.buildData.videoCard}
+                Video Card: {this.props.buildData.videocard}
                 <br />
-                Case: {this.props.buildData.compCase}
+                Case: {this.props.buildData.compcase}
                 <br />
-                Power Supply: {this.props.buildData.powerSupply}
+                Power Supply: {this.props.buildData.powersupply}
                 <br />
                 OS: {this.props.buildData.os}
                 <br />

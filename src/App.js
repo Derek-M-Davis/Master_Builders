@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import data from './data.js'
 import Main from './components/Main.js';
 import Aside from './components/Aside.js';
 import Header from './components/Header.js'
@@ -11,19 +10,18 @@ class App extends React.Component {
         this.state = {
             // builds: data,
             // cpu: null,
-            // cpuCooler: null,
+            // cpucooler: null,
             // motherboard: null,
             // memory: null,
             // storage: null,
-            // videoCard: null,
-            // compCase: null,
-            // powerSupply: null,
+            // videocard: null,
+            // compcase: null,
+            // powersupply: null,
             // os: null,
             // fan: null,
             // monitor: null,
             // keyboard: null,
             // mouse: null,
-            // favBuilds: [],
             view: {
                 page: 'home',
                 pageTitle: 'lkadsgf',
@@ -31,13 +29,13 @@ class App extends React.Component {
             },
             formInputs: {
                 cpu: null,
-                cpuCooler: null,
+                cpucooler: null,
                 motherboard: null,
                 memory: null,
                 storage: null,
-                videoCard: null,
-                compCase: null,
-                powerSupply: null,
+                videocard: null,
+                compcase: null,
+                powersupply: null,
                 os: null,
                 fan: null,
                 monitor: null,
@@ -52,13 +50,13 @@ class App extends React.Component {
         let pageTitle = ''
         let formInputs = {
             cpu: '',
-            cpuCooler: '',
+            cpucooler: '',
             motherboard: '',
             memory: '',
             storage: '',
-            videoCard: '',
-            compCase: '',
-            powerSupply: '',
+            videocard: '',
+            compcase: '',
+            powersupply: '',
             os: '',
             fan: '',
             monitor: '',
@@ -79,13 +77,13 @@ class App extends React.Component {
         pageTitle = 'Change up your build'
         formInputs = {
             cpu: buildData.cpu,
-            cpuCooler: buildData.cpuCooler,
+            cpucooler: buildData.cpucooler,
             motherboard: buildData.motherboard,
             memory: buildData.memory,
             storage: buildData.storage,
-            videoCard: buildData.videoCard,
-            case: buildData.compCase,
-            powerSupply: buildData.powerSupply,
+            videocard: buildData.videocard,
+            compcase: buildData.compcase,
+            powersupply: buildData.powersupply,
             os: buildData.os,
             fan: buildData.fan,
             monitor: buildData.monitor,
