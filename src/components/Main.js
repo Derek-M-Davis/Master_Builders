@@ -1,7 +1,6 @@
 import React from 'react'
 import Build from './Build.js'
 import Form from './Form.js'
-import Aboutus from './Aboutus.js'
 
 let baseUrl = '';
 if (process.env.NODE_ENV === 'development') {
@@ -108,14 +107,7 @@ class Main extends React.Component {
                 formInputs = {this.props.formInputs}
                 view = {this.props.view} 
                 />
-                }
-                {
-                this.props.view.page ==='aboutUs' }
-                 <Aboutus view={this.props.view}
-                    />
-    
-                
-            
+                }   
             </main>
         )
     }
