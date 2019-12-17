@@ -50,8 +50,8 @@ class Form extends React.Component {
             fan: this.props.formInputs.fan,
             monitor: this.props.formInputs.monitor,
             keyboard: this.props.formInputs.keyboard,
-            mouse: this.props.formInputs.mouse
-
+            mouse: this.props.formInputs.mouse,
+            id: this.props.formInputs.id
         })
     }
 
@@ -64,7 +64,7 @@ class Form extends React.Component {
         </label>
         <label>
           CPU Cooler
-          <input type="text" placeholder="Air Cooler/Liquid Cooler" id="cpucooler" value={this.state.cpcooler} onChange={this.handleChange}/>
+          <input type="text" placeholder="Air Cooler/Liquid Cooler" id="cpucooler" value={this.state.cpucooler} onChange={this.handleChange}/>
         </label>
         <label>
           Motherboard
