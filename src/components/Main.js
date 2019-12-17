@@ -1,6 +1,7 @@
 import React from 'react'
 import Build from './Build.js'
 import Form from './Form.js'
+import Aboutus from './Aboutus.js'
 
 let baseUrl = '';
 if (process.env.NODE_ENV === 'development') {
@@ -89,23 +90,32 @@ class Main extends React.Component {
     render(){
         return(
             <main>
-            <h1> {this.props.view.pageTitle} </h1>
-
-            {
+            <h1>{this.props.view.pageTitle}</h1>
+                {
                 this.props.view.page === 'home'
                 ? this.state.builds.map((buildData) => (
-                <Build key={buildData.id}
+                    <Build 
+                    key={buildData.id}
                     buildData={buildData}
                     handleView = {this.props.handleView}
-                    handleDelete= {this.handleDelete} />
-                ))
+                    handleDelete= {this.handleDelete} 
+                    />
+                    )
+                )
                 :<Form
                 handleCreate = {this.handleCreate}
                 handleUpdate = {this.handleUpdate}
                 formInputs = {this.props.formInputs}
-                view = {this.props.view} />
-            }
-
+                view = {this.props.view} 
+                />
+                }
+                {
+                this.props.view.page ==='aboutUs' }
+                 <Aboutus view={this.props.view}
+                    />
+    
+                
+            
             </main>
         )
     }
