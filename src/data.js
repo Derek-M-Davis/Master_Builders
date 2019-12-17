@@ -2,7 +2,7 @@ const compBuilds = {
     builds:[
         {
             cpu: 'Intel 4690K',
-            cpuCooler: 'Corsair h100i Platinum',
+            cpucooler: 'Corsair h100i Platinum',
             motherboard: 'MSI z97 Gaming 5',
             memory: 'Hyper Fury 16GB 1600 CAS 10',
             storage: '1TB 2.5in SSD',
@@ -17,7 +17,7 @@ const compBuilds = {
         },
         {
             cpu: 'Intel 9900KS',
-            cpuCooler: 'Corsair h110i Platinum',
+            cpucooler: 'Corsair h110i Platinum',
             motherboard: 'MSI z370 Ace',
             memory: 'G.Skill Trident Z RGB 32 GB 3200 CAS 16',
             storage: '1TB M.2 SSD',
@@ -32,7 +32,7 @@ const compBuilds = {
         },
         {
             cpu: 'AMD Ryzen 5 3600',
-            cpuCooler: 'Wraith Stealth',
+            cpucooler: 'Wraith Stealth',
             motherboard: 'ASRock x570 Taichi',
             memory: 'G.Skill Trident Z NEO 16 GB 3400 CAS 16',
             storage: '1TB M.2 SSD',

@@ -15,7 +15,7 @@ class App extends React.Component {
             // memory: null,
             // storage: null,
             // videocard: null,
-            // compCase: null,
+            // compcase: null,
             // powersupply: null,
             // os: null,
             // fan: null,

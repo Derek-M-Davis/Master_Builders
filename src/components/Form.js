@@ -44,7 +44,7 @@ class Form extends React.Component {
             memory: this.props.formInputs.memory,
             storage: this.props.formInputs.storage,
             videocard: this.props.formInputs.videocard,
-            case: this.props.formInputs.compcase,
+            compcase: this.props.formInputs.compcase,
             powersupply: this.props.formInputs.powersupply,
             os: this.props.formInputs.os,
             fan: this.props.formInputs.fan,
