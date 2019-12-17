@@ -5,13 +5,13 @@ class Form extends React.Component {
         super()
         this.state = {
             cpu: '',
-            cpuCooler: '',
+            cpucooler: '',
             motherboard: '',
             memory: '',
             storage: '',
-            videoCard: '',
-            compCase: '',
-            powerSupply: '',
+            videocard: '',
+            compcase: '',
+            powersupply: '',
             os: '',
             fan: '',
             monitor: '',
@@ -39,13 +39,13 @@ class Form extends React.Component {
     componentDidMount(){
         this.setState({
             cpu: this.props.formInputs.cpu,
-            cpuCooler: this.props.formInputs.cpuCooler,
+            cpucooler: this.props.formInputs.cpucooler,
             motherboard: this.props.formInputs.motherboard,
             memory: this.props.formInputs.memory,
             storage: this.props.formInputs.storage,
-            videoCard: this.props.formInputs.videoCard,
-            case: this.props.formInputs.compCase,
-            powerSupply: this.props.formInputs.powerSupply,
+            videocard: this.props.formInputs.videocard,
+            case: this.props.formInputs.compcase,
+            powersupply: this.props.formInputs.powersupply,
             os: this.props.formInputs.os,
             fan: this.props.formInputs.fan,
             monitor: this.props.formInputs.monitor,
@@ -64,7 +64,7 @@ class Form extends React.Component {
         </label>
         <label>
           CPU Cooler
-          <input type="text" placeholder="Air Cooler/Liquid Cooler" id="cpuCooler" value={this.state.cpuCooler} onChange={this.handleChange}/>
+          <input type="text" placeholder="Air Cooler/Liquid Cooler" id="cpucooler" value={this.state.cpcooler} onChange={this.handleChange}/>
         </label>
         <label>
           Motherboard
@@ -80,15 +80,15 @@ class Form extends React.Component {
         </label>
         <label>
           Video Card
-          <input type="text" placeholder="Geforce-GTX/RTX or Radeon-RX Series " id="videoCard" value={this.state.videoCard} onChange={this.handleChange}/>
+          <input type="text" placeholder="Geforce-GTX/RTX or Radeon-RX Series " id="videocard" value={this.state.videocard} onChange={this.handleChange}/>
         </label>
         <label>
           Case
-          <input type="text" placeholder="ATX/EATX/Micro ATX/Mini ITX" id="compCase" value={this.state.compCase} onChange={this.handleChange}/>
+          <input type="text" placeholder="ATX/EATX/Micro ATX/Mini ITX" id="compcase" value={this.state.compcase} onChange={this.handleChange}/>
         </label>
         <label>
           Power Supply
-          <input type="text" placeholder="Wattage and Rating" id="powerSupply" value={this.state.powerSupply} onChange={this.handleChange}/>
+          <input type="text" placeholder="Wattage and Rating" id="powersupply" value={this.state.powersupply} onChange={this.handleChange}/>
         </label>
         <label>
           Operating System

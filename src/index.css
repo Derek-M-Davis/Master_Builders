@@ -82,9 +82,8 @@ aside {
 aside h2 {
   font-family: var(--header-font);
   font-size: 2em;
-  color: whitesmoke;
+  color: var(--light-gray);
   margin-bottom: 0;
-  border: 1px solid;
 }
 aside h3 {
   font-family: var(--header-font);
