@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Computer Builder
 
-## Available Scripts
+<!-- link to hosted app -->
+#[Computer Building App]()
 
-In the project directory, you can run:
+#### Original Goal:
+> Make a computer build platform that allows you to show off your build. Have a User innerface to allow sign and saving of favorite builds.
+#### Technologies Used
+-MVC Structure  
+-React
+-PHP
+-JavaScript
+-Heroku Hosting application and CLI  
 
-### `npm start`
+#### Approach Taken
+>Working on the backend and frontend with a set of variables for the builds allowed us to get off to a great start and stay away from merge conflicts for the most part after the work flow was established. Once we were able to render the beggining parts of the project to the page we began to build routes and check for continuity throughout the application. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Challenges
+>Starting on the weekend was a challenge as we are still humans and it's the holiday season. Work was pushed quickly on friday and began the struggle of hosting on Heroku to no avail. Various branch issues with a less than effcient .gitignore file plagued us for a day and a half until it clicked and we were back on. Spelling errors and camelcased variables in PHP(13 variables in total) veered us off course for an afternoon but back on track we were ready to deploy to the cloud.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### Wireframes /  User Stories
+![Wireframe Image 1]( https://res.cloudinary.com/dcgapn1j0/image/upload/v1576557648/first_render_fw8yki.png "First Local Rendering")
+![Wireframe Image 2]( https://res.cloudinary.com/dcgapn1j0/image/upload/v1576557657/basic_css_onknhb.png "Basic CSS Styling Applied To age")
+![Wireframe Image 3]( https://res.cloudinary.com/dcgapn1j0/image/upload/v1576557640/first_form_render_mcnmez.png  "First Form Render")
+![Wireframe Image 4]( https://res.cloudinary.com/dcgapn1j0/image/upload/v1576557630/seeded_data_wvipdk.png "Seeded Data from DB and On Page Submission")
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### Goals/Future Plans
+> To be able to make the user system in a language we had just learned in three days was quickly put on the backburner and we would much like some time to be able impliment that but with a final project with looming I think we are very happy with how it turned out.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Unsolved Problems
+>
