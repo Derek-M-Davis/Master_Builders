@@ -1,10 +1,11 @@
 import React from 'react'
+import logo from "./masterbuilderslogo.png";
 
 class Header extends React.Component {
     render(){
         return (
             <header>
-            <h1>Master Builders!</h1>
+                <img src={logo} alt="websitelogo" />
             </header>
         )
     }
