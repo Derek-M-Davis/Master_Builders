@@ -8,9 +8,9 @@
 #### Technologies Used
 -React FrontEnd
 
--PHP BackEnd
+-PHP and PostgresQL BackEnd
 
--JavaScript
+-JavaScript and JSX
 
 -Heroku Hosting application and CLI  
 
