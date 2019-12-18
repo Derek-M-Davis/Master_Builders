@@ -8,7 +8,7 @@
 #### Technologies Used
 -React FrontEnd
 
--PHP and PostgresQL BackEnd
+-PHP SQL and PostgresQL BackEnd
 
 -JavaScript and JSX
 
