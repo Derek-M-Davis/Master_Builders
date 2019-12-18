@@ -132,13 +132,6 @@ article, form {
 .build-header {
   display: flex;
 }
-.build-header img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  padding: 2px;
-  border: 1px solid #ddd;
-}
 .build-header h1 {
   font-family: var(--header-font);
   font-size: 1.7em;
@@ -151,29 +144,6 @@ article, form {
   box-sizing: border-box;
   border-left: 2px solid var(--light-gray);
   column-count: 2;
-}
-.build-options ul {
-  width: 95%;
-  margin: 20px auto;
-  border-top: 1px solid #eee;
-  list-style-type: none;
-  padding: 10px 0px;
-  font-family: var(--accent-font);
-  font-weight: 300;
-  color: #888;
-}
-.build-options li {
-  display: inline-block;
-  width: 50%;
-  text-align: center;
-  padding: 5px;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-.build-options li:hover {
-  background: var(--light-gray);
-  color: white;
-  cursor: pointer;
 }
 
 /* ------ Form ------ */
