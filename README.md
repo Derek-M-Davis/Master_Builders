@@ -7,9 +7,13 @@
 > Make a computer build platform that allows you to show off your build. Have a User innerface to allow sign and saving of favorite builds.
 #### Technologies Used
 -MVC Structure  
+
 -React FrontEnd
+
 -PHP BackEnd
+
 -JavaScript
+
 -Heroku Hosting application and CLI  
 
 #### Approach Taken
